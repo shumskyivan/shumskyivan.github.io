@@ -1,4 +1,4 @@
-#HTML, CSS, JS проекты
+*HTML, CSS, JS проекты*
 
 1. **Веб-закладки (https://shumskyivan.github.io/bookmarks_app/)**
 
