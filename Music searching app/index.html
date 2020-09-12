@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Google_Play_Music_icon_%282016%29.svg/1200px-Google_Play_Music_icon_%282016%29.svg.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение по поиску музыки</title>
+</head>
+<body>
+    <header class="header">
+        <div id="logo" class="logo"><a href="index.html">ПоискМузыки</a></div>
+
+    </header>
+
+    <!-- main  -->
+    <main>
+        <div class="search-container">
+<form id="searchForm">
+    <label class="search-label" for="search-input">Какую песню вы ищите?</label>
+    <input placeholder="название песни..." id="search-input" type="text">
+    <input id="search-submit" value="Искать" type="submit">
+</form>
+
+<div class="music-results">
+<!-- <div class="result-item">
+    <div class="item-img">
+        <img src="${item.songCoverSrc}">
+    </div>
+    <div class="item-title">item.songName</div>
+    <div class="item-author">item.artistName</div>
+
+    <div class="item-play-btn"><i class="fas fa-play"></i>
+    </div>
+    <div class="item-bookmark-btn"><i class="far fa-bookmark"></i>
+    </div>
+</div> -->
+</div>
+        </div>
+        <div class="player-container">
+            <audio id="audio-item" src=""></audio>
+            <!-- image -->
+            <div class="image-place">
+                <img src="https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="">
+            </div>
+
+
+            <div class="title-place">
+                <div id="title"></div>
+                <div id="author"></div>
+            </div>
+
+            <!-- progress -->
+            <div class="progress-container">
+                <div class="duration-wrapper">
+                    <span id="current-time">0:00</span>
+                    <span id="duration">2:06</span>
+                </div>
+                <div class="progress-wrapper" id="progress-wrapper">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+                <div class="controls">
+                    <div class="leftBtn" id="leftBtn"><i class="fas fa-angle-double-left"></i>
+                    </div>
+                    <div class="playBtn" id="playBtn"><i class="fas fa-play"></i>
+                    </div>
+                    <div class="rightBtn" id="rightBtn"><i class="fas fa-angle-double-right"></i>
+                    </div>
+                </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
