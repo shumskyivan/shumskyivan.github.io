@@ -69,7 +69,7 @@ function validateUserInputs(nameVal, urlVal, tagVal){
                  return false;
             }
 
-            if(urlVal.includes(" ")){
+            if(tagVal.includes(" ")){
                 alert("Тэг не должен содержать пробелов!");
                 return false;
             }
@@ -82,6 +82,7 @@ function validateUserInputs(nameVal, urlVal, tagVal){
                 alert("URL не соответсвует требованиям!");
                  return false;
             }
+
              return true;
 }
 
@@ -101,7 +102,7 @@ function buildUI(){
 
     bookmarksArr.forEach(el => {
         const item = document.createElement("div");
-        item.classList.add("bookmark-item", `${el.tag}`);
+         item.classList.add("bookmark-item", `${el.tag}`);
 
         //img
         const img = document.createElement("img");
