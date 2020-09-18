@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Список книг</h2>
+
+        <div class="alert-container">Alert message!</div>
+
+        <form class="form" id="form">
+            <div class="form-item">
+                <label for="title">Заголовок</label>
+            <input type="text" id="title" class="title-input">
+            </div>
+
+            <div class="form-item">
+                <label for="author">Автор</label>
+            <input type="text" id="author" class="author-input">
+            </div>
+
+            <div class="form-item">
+                <label for="link">Ссылка</label>
+            <input type="text" id="link" class="link-input">
+            </div>
+
+            <input type="submit" id="submit" class="submit-input" value="Добавить">
+        </form>
+
+
+    </div>
+
+    <table class="result-container">
+        <tbody>
+            <tr>
+                <th>Заголовок</th>
+                <th>Автор</th>
+                <th class="remove-btn"></th>
+            </tr>
+
+            <!-- <tr class="item-row">
+                <td class="title-row"><a href="udemy.com">Black Hat Python: Python Programming for Hackers and Pentesters</a></td>
+                <td class="author-row">Justin Seitz</td>
+                <td class="remove-row"><div class="delete-btn"><i class="fas fa-trash"></i></div></td>
+            </tr> -->
+
+        </tbody>
+    </table>
+    <script src="./app.js"></script>
+</body>
+</html>
