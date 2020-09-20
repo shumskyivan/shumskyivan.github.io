@@ -20,7 +20,7 @@ body {
   font-family: Montserrat;
   font-size: 17px;
   background-color: var(--primary);
-  height: 100vh;
+  height: 120vh;
 }
 
 a {
@@ -73,7 +73,7 @@ p {
 
 .card-item{
   width: 600px;
-  max-width: 95%;
+  max-width: 90%;
   background-color: white;
   text-align: center;
   padding: .4rem;
@@ -89,6 +89,8 @@ p {
 .card-text-front{
   font-size: 23px;
   transition-duration: 0.8s;
+  width: 75%;
+  margin: auto;
 }
 
 .card-text-front.active{
@@ -238,6 +240,8 @@ input[type="submit"]{
     gap: 1rem;
     height: fit-content;
     padding: 1rem;
+    text-align: center;
     }
+
 }
 
