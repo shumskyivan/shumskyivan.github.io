@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки</title>
+</head>
+<body>
+    <!-- modal -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="modal-header">
+                <i class="fas fa-times"></i>
+            </div>
+            <form class="modal-content">
+                <label for="questionInput">Вопрос</label>
+               <input id="questionInput" type="text"> 
+
+               <label for="answerInput">Ответ</label>
+               <input id="answerInput" type="text"> 
+
+               <input type="submit" value="Добавить">
+            </form>
+        </div>
+    </div>
+    <!-- header -->
+    <header class="header">
+        <div class="logo"><a href="index.html">🎴Карточки</a></div>
+        <nav class="nav-menu">
+            <button id="addNewDeck" class="add-new-deck-btn">Добавить</button>
+            <button id="myDecks" class="my-decks-btn">Мои коллекции</button>
+        </nav>
+    </header>
+
+    <div class="content-container">
+<div class="card-item">
+    <div class="card-content">
+        <div class="card-text-front" id="frontCardText">
+            Что такое PHP?
+        </div>
+        <div class="card-text-back" id="backCardText">
+            Язык программирования
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="left-btn" id="leftBtn"><i class="fas fa-chevron-left"></i></div>
+        <div class="right-btn" id="rightBtn"><i class="fas fa-chevron-right"></i></div>
+        <div class="flip-btn" id="flipBtn"><i class="fas fa-undo"></i></div>
+        <div class="remove-btn" id="removeBtn"><i class="fas fa-trash"></i></div>
+    </div>
+
+    <div class="counter"></div>
+</div>
+    </div>
+
+    <footer class="footer"></footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
