@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор шуток</title>
+</head>
+<body>
+
+    <!-- модальное окно -->
+    <div class="popup-window"></div>
+    <!-- </div> -->
+    <div class="container">
+        <h1>Генератор шуток</h1>
+
+    <div class="content">
+        <div class="content-main">
+            <div class="content-text">
+                <i class="fas fa-quote-left content-text-icon"></i>
+                <span id="text"></span>
+            </div>
+        </div>
+        <div class="content-bottom">
+
+            <button id="copyBtn" class="bottom-button">
+                Скопировать <i class="far fa-copy"></i>
+            </button>
+
+            <button id="favoriteBtn" class="bottom-button">
+                Добавить в избранное <i class="far fa-bookmark"></i>
+            </button>
+
+            <button id="nextBtn" class="bottom-button">
+                Следующая <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    </div>
+
+    
+    <!-- контейнер для избранных шуток -->
+    <div class="favs-container"></div>
+    
+    <!-- JS -->
+
+    <!-- для api -->
+    <script 
+    type="text/javascript"
+     language="javascript" 
+     src="http://www.rzhunemogu.ru/widzh/RNMjsonp.js">
+    </script>
+     
+     <!-- файл с js кодом -->
+     <script src="./main.js"></script>
+</body>
+</html>
+
+
