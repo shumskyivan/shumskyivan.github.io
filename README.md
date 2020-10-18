@@ -1,2 +1,2 @@
-*Front End Проекты с использованием html, css, javascript*
+**Front End Проекты с использованием html, css, javascript**
 
